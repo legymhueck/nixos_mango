@@ -1,0 +1,22 @@
+= TMP Key Change
+
+Run these commands in order:
+
+Back up the old key file
+sudo install -d -m 700 /var/lib/libvirt/secrets
+sudo cp -a /var/lib/libvirt/secrets/secrets-encryption-key /var/lib/libvirt/secrets/secrets-encryption-key.backup.$(date +%F-%H%M%S) 2>/dev/null || true
+
+Remove the stale TPM-bound key
+sudo rm -f /var/lib/libvirt/secrets/secrets-encryption-key
+
+Regenerate a new key on this machine
+sudo systemctl start virt-secret-init-encryption.service
+
+Clear failed state and restart libvirt sockets
+sudo systemctl reset-failed libvirtd.service libvirtd.socket libvirtd-ro.socket libvirtd-admin.socket
+sudo systemctl restart libvirtd.socket libvirtd-ro.socket libvirtd-admin.socket
+
+Verify
+systemctl --failed
+systemctl status libvirtd.service libvirtd.socket --no-pager
+virsh -c qemu:///system list --all

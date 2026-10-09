@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Firefox (USB Fast)
+Comment=Firefox with RAM profile for USB speed
+Exec=/usr/local/bin/firefox-usb.sh
+Icon=firefox
+Terminal=false
+Type=Application
+Categories=Network;WebBrowser;
+MimeType=text/html;text/xml;application/xhtml+xml;application/xml;application/rss+xml;application/rdf+xml;x-scheme-handler/http;x-scheme-handler/https;
+StartupNotify=true
