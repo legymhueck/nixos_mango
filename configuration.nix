@@ -66,6 +66,7 @@
   security.rtkit.enable = true;
   hardware.bluetooth.enable = true;            # Noctalia: Bluetooth,
   services.power-profiles-daemon.enable = true;#   power profile,
+  services.thermald.enable = true;              # Intel thermal management
   services.upower.enable = true;               #   battery widgets
   environment.sessionVariables = {
     NIXOS_OZONE_WL = "1";   # Electron/Chromium on Wayland
