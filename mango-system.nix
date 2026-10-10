@@ -44,6 +44,7 @@
     traceroute
     usbutils
     vulkan-tools
+    wdisplays
     xdg-desktop-portal-gtk
     xdg-desktop-portal-wlr
     xdg-utils

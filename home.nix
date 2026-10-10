@@ -51,7 +51,8 @@
         "privacy.resistFingerprinting" = true;
 
         "sidebar.revamp" = true;
-        "sidebar.verticalTabs" = false;
+        "sidebar.verticalTabs" = true;
+        "extensions.activeThemeID" = "default-theme@mozilla.org";
 
         "browser.startup.page" = 1;
         "browser.startup.homepage" = "about:blank";
