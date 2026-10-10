@@ -55,7 +55,7 @@
     isNormalUser = true;
     extraGroups = [ "wheel" "networkmanager" "video" "audio" ];
   };
-  environment.systemPackages = with pkgs; [ git vim ];
+  environment.systemPackages = with pkgs; [ git vim vlc ffmpeg ];
 
   # --- desktop ---
   programs.mango.enable = true;                # session entry, portals, polkit, Xwayland
