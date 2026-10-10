@@ -151,8 +151,7 @@
     (brave.override {
       commandLineArgs = "--password-store=gnome-libsecret";
     })
-
-    bitwarden-desktop
+    conjure
     github-copilot-cli
     inputs.hylki.packages.${pkgs.stdenv.hostPlatform.system}.default
     inputs.bibox.packages.${pkgs.stdenv.hostPlatform.system}.default
