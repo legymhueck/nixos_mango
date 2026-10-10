@@ -34,6 +34,8 @@
   ];
   services.btrfs.autoScrub.enable = true;
   services.fstrim.enable = true;
+  services.udisks2.enable = true;
+  # services.syncthing.enable = true;
 
   swapDevices = [ { device = "/swapfile"; } ];   # created in the mount step; zram (prio 5) is used first, the file is overflow
   zramSwap = { enable = true; algorithm = "zstd"; memoryPercent = 50; };

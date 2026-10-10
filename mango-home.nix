@@ -18,7 +18,6 @@ in
     adw-gtk3
     adwaita-icon-theme
     adwaita-qt
-    alacritty
     alsa-oss
     aspell
     aspellDicts.de
@@ -42,12 +41,10 @@ in
     gimp
     github-cli
     grim
-    gspell
     gst_all_1.gst-libav
     gst_all_1.gst-plugins-bad
     gst_all_1.gst-plugins-good
     gst_all_1.gst-plugins-ugly
-    gtkspell3
     handbrake
     hunspell
     hunspellDicts.de_DE
@@ -60,7 +57,6 @@ in
     inetutils
     inter
     iperf3
-    ispell
     jdk
     kdePackages.breeze-icons
     kdePackages.dolphin
@@ -74,44 +70,36 @@ in
     khal
     kitty
     less
-    libmypaint
     libreoffice
     librewolf
     libsForQt5.qt5ct
     lsof
     meld
-    mplayer
     mpv
     mypaint
-    mypaint-brushes
     nautilus
-    networkmanagerapplet
+    # networkmanagerapplet # noctalia network UI has it
     noto-fonts-color-emoji
     nuspell
-    nwg-look
     obsidian
     openconnect
     p7zip
     pandoc
-    pavucontrol
+    pwvucontrol
     python3
     qt6Packages.qt6ct
     ripgrep
-    rofi
     rsync
     scrcpy
     sshfs
     starship
-    syncthing
     tealdeer
     udiskie
-    udisks2
     unzip
     uv
     veracrypt
     vlc
     vorta
-    wezterm
     wget
     which
     xwayland-satellite
