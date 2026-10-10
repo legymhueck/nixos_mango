@@ -19,52 +19,55 @@
   programs.firefox = {
     enable = true;
     languagePacks = [ "de" ];
-    preferencesStatus = "default";
 
-    preferences = {
-      "privacy.trackingprotection.enabled" = true;
-      "privacy.trackingprotection.socialtracking.enabled" = true;
-      "privacy.trackingprotection.emailtracking.enabled" = true;
-      "privacy.donottrackheader.enabled" = true;
+    profiles.default = {
+      isDefault = true;
 
-      "dom.security.https_only_mode" = true;
-      "dom.security.https_only_mode_pbm" = true;
+      settings = {
+        "privacy.trackingprotection.enabled" = true;
+        "privacy.trackingprotection.socialtracking.enabled" = true;
+        "privacy.trackingprotection.emailtracking.enabled" = true;
+        "privacy.donottrackheader.enabled" = true;
 
-      "toolkit.telemetry.unified" = false;
-      "toolkit.telemetry.archive.enabled" = false;
-      "datareporting.healthreport.uploadEnabled" = false;
-      "datareporting.policy.dataSubmissionEnabled" = false;
-      "app.shield.optoutstudies.enabled" = false;
+        "dom.security.https_only_mode" = true;
+        "dom.security.https_only_mode_pbm" = true;
 
-      "geo.enabled" = false;
-      "browser.search.suggest.enabled" = false;
-      "browser.urlbar.suggest.quicksuggest.sponsored" = false;
-      "browser.urlbar.suggest.quicksuggest.nonsponsored" = false;
-      "browser.tabs.closeWindowWithLastTab" = false;
-      "browser.newtabpage.activity-stream.discoverystream.enabled" = false;
-      "browser.newtabpage.activity-stream.feeds.section.topstories" = false;
-      "browser.newtabpage.activity-stream.feeds.topsites" = false;
+        "toolkit.telemetry.unified" = false;
+        "toolkit.telemetry.archive.enabled" = false;
+        "datareporting.healthreport.uploadEnabled" = false;
+        "datareporting.policy.dataSubmissionEnabled" = false;
+        "app.shield.optoutstudies.enabled" = false;
 
-      "media.peerconnection.enabled" = false;
-      "privacy.resistFingerprinting" = true;
+        "geo.enabled" = false;
+        "browser.search.suggest.enabled" = false;
+        "browser.urlbar.suggest.quicksuggest.sponsored" = false;
+        "browser.urlbar.suggest.quicksuggest.nonsponsored" = false;
+        "browser.tabs.closeWindowWithLastTab" = false;
+        "browser.newtabpage.activity-stream.discoverystream.enabled" = false;
+        "browser.newtabpage.activity-stream.feeds.section.topstories" = false;
+        "browser.newtabpage.activity-stream.feeds.topsites" = false;
 
-      "sidebar.revamp" = true;
-      "sidebar.verticalTabs" = false;
+        "media.peerconnection.enabled" = false;
+        "privacy.resistFingerprinting" = true;
 
-      "browser.startup.page" = 1;
-      "browser.startup.homepage" = "about:blank";
-      "browser.newtabpage.enabled" = false;
+        "sidebar.revamp" = true;
+        "sidebar.verticalTabs" = false;
 
-      "browser.newtabpage.activity-stream.showWeather" = false;
-      "browser.newtabpage.activity-stream.showSponsored" = false;
-      "browser.newtabpage.activity-stream.showSponsoredTopSites" = false;
-      "browser.newtabpage.activity-stream.feeds.telemetry" = false;
+        "browser.startup.page" = 1;
+        "browser.startup.homepage" = "about:blank";
+        "browser.newtabpage.enabled" = false;
 
-      "browser.aboutwelcome.enabled" = false;
-      "trailhead.firstrun.didSeeAboutWelcome" = true;
-      "browser.startup.homepage_override.mstone" = "ignore";
-      "browser.shell.checkDefaultBrowser" = false;
-      "datareporting.policy.dataSubmissionPolicyBypassNotification" = true;
+        "browser.newtabpage.activity-stream.showWeather" = false;
+        "browser.newtabpage.activity-stream.showSponsored" = false;
+        "browser.newtabpage.activity-stream.showSponsoredTopSites" = false;
+        "browser.newtabpage.activity-stream.feeds.telemetry" = false;
+
+        "browser.aboutwelcome.enabled" = false;
+        "trailhead.firstrun.didSeeAboutWelcome" = true;
+        "browser.startup.homepage_override.mstone" = "ignore";
+        "browser.shell.checkDefaultBrowser" = false;
+        "datareporting.policy.dataSubmissionPolicyBypassNotification" = true;
+      };
     };
 
     policies = {
