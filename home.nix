@@ -34,6 +34,8 @@
     opencode
     proton-pass
     proton-authenticator
+    typst
+    tinymist
     wl-clipboard
     vscode
   ];
