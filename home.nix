@@ -155,6 +155,7 @@
       commandLineArgs = "--password-store=gnome-libsecret";
     })
     conjure
+    inputs.nixpkgs-stable.legacyPackages.${pkgs.stdenv.hostPlatform.system}.filen-desktop
     github-copilot-cli
     inputs.hylki.packages.${pkgs.stdenv.hostPlatform.system}.default
     inputs.bibox.packages.${pkgs.stdenv.hostPlatform.system}.default
