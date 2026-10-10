@@ -48,7 +48,9 @@
         "browser.newtabpage.activity-stream.feeds.topsites" = false;
 
         "media.peerconnection.enabled" = false;
-        "privacy.resistFingerprinting" = true;
+        # RFP forces prefers-color-scheme to light; FPP keeps dark mode working
+        "privacy.resistFingerprinting" = false;
+        "privacy.fingerprintingProtection" = true;
 
         "sidebar.revamp" = true;
         "sidebar.verticalTabs" = true;
