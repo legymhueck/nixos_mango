@@ -15,6 +15,18 @@
       url = "path:./flakes/hylki";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    bibox = {
+      url = "path:./flakes/bibox";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    cornelsen_offline_lernen = {
+      url = "path:./flakes/cornelsen_offline_lernen";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    mtplayer = {
+      url = "path:./flakes/mtplayer";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     # no "follows" here, otherwise the Cachix binary cache cannot be used
     noctalia.url = "github:noctalia-dev/noctalia";
   };

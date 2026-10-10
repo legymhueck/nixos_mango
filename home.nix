@@ -27,6 +27,9 @@
     ente-auth
     github-copilot-cli
     inputs.hylki.packages.${pkgs.stdenv.hostPlatform.system}.default
+    inputs.bibox.packages.${pkgs.stdenv.hostPlatform.system}.default
+    inputs.cornelsen_offline_lernen.packages.${pkgs.stdenv.hostPlatform.system}.default
+    inputs.mtplayer.packages.${pkgs.stdenv.hostPlatform.system}.default
     helix
     jetbrains-mono
     liberation_ttf
