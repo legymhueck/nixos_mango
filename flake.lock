@@ -1,5 +1,37 @@
 {
   "nodes": {
+    "bibox": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "path": "./flakes/bibox",
+        "type": "path"
+      },
+      "original": {
+        "path": "./flakes/bibox",
+        "type": "path"
+      },
+      "parent": []
+    },
+    "cornelsen_offline_lernen": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "path": "./flakes/cornelsen_offline_lernen",
+        "type": "path"
+      },
+      "original": {
+        "path": "./flakes/cornelsen_offline_lernen",
+        "type": "path"
+      },
+      "parent": []
+    },
     "flake-parts": {
       "inputs": {
         "nixpkgs-lib": "nixpkgs-lib"
@@ -115,6 +147,22 @@
         "type": "github"
       }
     },
+    "mtplayer": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "path": "./flakes/mtplayer",
+        "type": "path"
+      },
+      "original": {
+        "path": "./flakes/mtplayer",
+        "type": "path"
+      },
+      "parent": []
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1791456040,
@@ -179,9 +227,12 @@
     },
     "root": {
       "inputs": {
+        "bibox": "bibox",
+        "cornelsen_offline_lernen": "cornelsen_offline_lernen",
         "home-manager": "home-manager",
         "hylki": "hylki",
         "mango": "mango",
+        "mtplayer": "mtplayer",
         "nixpkgs": "nixpkgs",
         "noctalia": "noctalia"
       }

@@ -34,15 +34,15 @@
       packages.${system} = rec {
         mtplayer = pkgs.stdenv.mkDerivation rec {
           pname = "mtplayer";
-          version = "21__2026.01.23";
+          version = "22__2026.08.22";
 
           src = pkgs.fetchurl {
             url = "https://www.p2tools.de/download/mtplayer/act/MTPlayer-${version}.zip";
-            hash = "sha256-Dyu6ee/rS/RC2k3VUkdBtP6qMnvn6tiax751zDkDEu8="; 
+            hash = "sha256-7TauWRVNDumAaN6BOHFndh2iVpLk2EUfJCuF4tY6iDM=";
           };
 
           nativeBuildInputs = [ pkgs.unzip pkgs.makeWrapper ];
-          buildInputs = [ pkgs.temurin-bin-17 pkgs.vlc pkgs.ffmpeg ] ++ runtimeLibs;
+          buildInputs = [ pkgs.temurin-bin-21 pkgs.vlc pkgs.ffmpeg ] ++ runtimeLibs;
 
           unpackPhase = ''
             unzip $src -d source

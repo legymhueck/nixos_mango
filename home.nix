@@ -24,7 +24,7 @@
     })
 
     bitwarden-desktop
-    ente-auth
+    ffmpeg
     github-copilot-cli
     inputs.hylki.packages.${pkgs.stdenv.hostPlatform.system}.default
     inputs.bibox.packages.${pkgs.stdenv.hostPlatform.system}.default
@@ -40,6 +40,7 @@
     typst
     tinymist
     wl-clipboard
+    vlc
     vscode
   ];
 

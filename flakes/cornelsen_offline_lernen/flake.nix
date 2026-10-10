@@ -24,7 +24,7 @@
 
           src = pkgs.fetchurl {
             url = "https://ebook.cornelsen.de/uma20/public/v2/uma/offline/win";
-            hash = "sha512-+AtDp4Qu7xOOWtmdDCJID7xINFVj44emtciGOyKJPaVIW9+f9aFu8K93LYjD1pCyZUFYYY39AeVtozxjUEAmZQ=="; 
+            hash = "sha512-yZzR5LaV2RkHERcVE9i6GuvavVkfIZSONtUfa+qwMz9qYQUIS4jAzGi0yk9L1MDxkjAUGJfLfhE10LK50R3hOg=="; 
           };
 
           nativeBuildInputs = [ pkgs.unzip pkgs.asar pkgs.nodejs pkgs.makeWrapper ];
